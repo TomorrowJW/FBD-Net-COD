@@ -1,3 +1,1 @@
-# FBD-Net-COD
-
-该工作已被PRCV2025接收，代码将于稍后公开。
+This work has been accepted by TOMM and the codes will be made public later.
