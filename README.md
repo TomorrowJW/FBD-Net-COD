@@ -1,13 +1,10 @@
-# Boosting Foreground-Background Disentanglement for Camouflaged Object Detection (ACM TOMM 2025)
+# Boosting Foreground-Background Disentanglement for Camouflaged Object Detection  
+### ACM Transactions on Multimedia Computing, Communications, and Applications (TOMM), 2025
 
-> **Authors:** 
-> Jiesheng Wu,
-> Fangwei Hao,
-> and Jing Xu.
-
-> **Institutions:** 
-> School of Computer and Information, Anhui Normal University, Wuhu, China;
-> College of Artificial Intelligence, Nankai University, Tianjin, China
+> **Authors:**  
+> Jiesheng Wu¹ (Corresponding author), Fangwei Hao², Jing Xu²  
+> ¹ School of Computer and Information, Anhui Normal University, Wuhu, China 
+> ² College of Artificial Intelligence, Nankai University, Tianjin, China
 
 ## 1. Preface
 
@@ -66,11 +63,11 @@ The training and testing experiments are conducted using [PyTorch](https://githu
     + downloading testing dataset and move it into `./data/`, 
     which can be found from [Baidu Drive](https://pan.baidu.com/s/1xnaiHnAuj4UVTPRak9oU2g) (extraction code: nhwe). 
         
-    + downloading our weights and move it into `./save_models/res_199.pth` or `./save_models/swin_199.pth`, 
-    which can be found from [(Baidu Drive)](https://pan.baidu.com/s/1ONrkzCl1yoVEp2b9dbeFhQ) (extraction code: j1zt). 
+    + downloading our weights and move it into `./save_models/PVT-V2-B4-384.pth`, 
+    which can be found from [(Baidu Drive)](https://pan.baidu.com/s/1ibKdnGDf4_vCGY_zmqyyAA?pwd=2855) (extraction code: 2855). 
     
-    + downloading Res2Net or Swin V2 weights and move it into `./pre_train/res2net50_v1b_26w_4s-3cf99910.pth` or `./pre_train/swinv2_base_patch4_window12to24_192to384_22kto1k_ft.pth`,
-    which can be found from [Baidu Drive](https://pan.baidu.com/s/18K3Rpk44Bu7JPq36aX1-PQ) (extraction code: izc5). 
+    + downloading weights and move it into `./pre_train/pvt_v2_b4.pth`,
+    which can be found from [Baidu Drive](https://pan.baidu.com/s/1aWXw0O7vMXRYWQK5MvHBIA?pwd=u1u6) (extraction code: u1u6). 
 
 1. Training Configuration:
 
@@ -81,25 +78,35 @@ The training and testing experiments are conducted using [PyTorch](https://githu
 
     + After you download all the pre-trained model and testing dataset, just run `MyTest.py` to generate the final prediction maps.
     
-    + You can also download prediction maps ('CHAMELEON', 'CAMO', 'COD10K', 'NC4K') from [Baidu Drive](https://pan.baidu.com/s/1VG3ftr5yzIOg9VSdN1149w) (extraction code: iuu6)).
+    + You can also download prediction maps and edge prediction maps ('CHAMELEON', 'CAMO', 'COD10K', 'NC4K') from [Baidu Drive](https://pan.baidu.com/s/1MhEAX396p9cFGbehCxgYlA?pwd=w2mw) (extraction code: w2mw)).
 
+Note:  If you have difficulty accessing Baidu Drive, please contact us for alternative download links.
 ### 3.2 Evaluating your trained model:
 
-One evaluation is written in Python code ([link](https://github.com/lartpang/PySODMetrics)), 
+One evaluation is written in Python codes ([link](https://github.com/lartpang/PySODMetrics)), or Matlab codes ([link](https://github.com/DengPingFan/CODToolbox)).
 please follow this the instructions in `MyEval.py` and just run it to generate the evaluation results.
 
 ## 4. Citation
 
 Please cite our paper if you find the work useful, thanks!
 	
-@article{wu2025boosting,
-  title={Boosting Foreground-Background Disentanglement for Camouflaged Object Detection},
-  author={Wu, Jiesheng and Hao, Fangwei and Xu, Jing},
-  journal={ACM Transactions on Multimedia Computing, Communications and Applications},
-  volume={21},
-  number={12},
-  pages={1--23},
-  year={2025},
-  publisher={ACM New York, NY}
-}
+	@article{wu2025boosting,
+	  title={Boosting Foreground-Background Disentanglement for Camouflaged Object Detection},
+	  author={Wu, Jiesheng and Hao, Fangwei and Xu, Jing},
+	  journal={ACM Transactions on Multimedia Computing, Communications and Applications},
+	  volume={21},
+	  number={12},
+	  pages={1--23},
+	  year={2025},
+	  publisher={ACM New York, NY}
+	}
+
+## 5. Contact
+
+For any questions, discussions, or collaboration opportunities, please contact:
+
+**Jiesheng Wu**  
+School of Computer and Information, Anhui Normal University, Wuhu, China
+Email: jasonwu@mail.nankai.edu.cn
+
 **[⬆ back to top](#1-preface)**
